@@ -6,7 +6,17 @@ This project demonstrates the use of MongoDB as a backend for storing and managi
 
 - **Data storage**: MongoDB is a highly scalable, high-performance NoSQL database that supports flexible data storage in JSON-like documents. This flexibility allows for easy storage and retrieval of time series data, such as sensor readings, without the need for complex schema changes.
 - **Time series collections**: MongoDB provides dedicated support for time series data through time series collections. These collections are optimized for insert-heavy workloads and enable efficient storage, querying, and analysis of time series data.
-- **PyMongoArrow**: MongoDB's GridFS feature allows for storage and retrieval of large files, such as trained machine learning models, in a MongoDB database. This enables seamless integration of model storage and deployment within the same database system.
+- **PyMongoArrow**:
+
+pymongoarrow offers several advantages over using $project with the aggregate() function in pymongo when building a DataFrame:
+
+    Performance: pymongoarrow can significantly improve the performance of transferring data from MongoDB to pandas by using the Apache Arrow format. Apache Arrow is a high-performance in-memory data format optimized for analytical processing. It minimizes the need for data serialization and deserialization, allowing for much faster data transfer between MongoDB and pandas.
+
+    Memory efficiency: By using Apache Arrow, pymongoarrow can reduce the memory overhead when working with large datasets. Arrow's columnar memory format enables more efficient memory usage when transferring data between MongoDB and pandas. This can be particularly beneficial when working with large datasets, as it can reduce the overall memory footprint.
+
+    Ease of use: When using $project with the aggregate() function, you need to manually convert the result into a pandas DataFrame. With pymongoarrow, the conversion is handled automatically, which simplifies the process and reduces the likelihood of errors.
+
+    Flexibility: Although $project can be used for simple transformations and filtering, pymongoarrow offers a more flexible and efficient way of transferring data between MongoDB and pandas, especially when working with complex data structures or large datasets.
 
 ## Project Structure
 
