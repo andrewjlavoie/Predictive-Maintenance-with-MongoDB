@@ -31,7 +31,7 @@ predictive_maintenance_project/
 ## Getting Started
 
 1. Clone this repository:
-`git clone https://github.com/yourusername/predictive_maintenance_project.git`
+`git clone https://github.com/andrewjlavoie/Predictive-Maintenance-with-MongoDB.git`
 
 2. Install the required dependencies:
 `pip install flask numpy pandas pymongo pymongoarrow pyarrow joblib scikit-learn`
