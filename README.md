@@ -18,21 +18,15 @@ This project demonstrates the use of MongoDB as a backend for storing and managi
 
 ## Project Structure
 
-`predictive_maintenance_project/
+`api_predict_test.py # Tests sample document against model through Flask API
 
-│
+app.py # Flask API code
 
-├── api_predict_test.py # Tests sample document against model through Flask API
+data_generation_1.ipynb # Jupyter Notebook for the data generation
 
-├── app.py # Flask API code
+start_here.py # Read the data with pymongoarrow, generate a graphic, build an ML model, test prediction
 
-├── data_generation_1.ipynb # Jupyter Notebook for the data generation
-
-├── start_here.py # Read the data with pymongoarrow, generate a graphic, build an ML model, test prediction
-
-│
-
-└── README.md # Project documentation`
+README.md # Project documentation`
 
 
 ## Getting Started
