@@ -26,7 +26,7 @@ predictive_maintenance_project/
 `git clone https://github.com/yourusername/predictive_maintenance_project.git`
 
 2. Install the required dependencies:
-`pip install -r requirements.txt`
+`pip install flask numpy pandas pymongo pymongoarrow pyarrow joblib scikit-learn`
 
 3. Generate the dataset and store it in a MongoDB database:
 Open the `data_generation_1.ipynb` and edit the MongoDB DB URI in the bottom cell. Follow the comments.
