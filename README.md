@@ -6,9 +6,7 @@ This project demonstrates the use of MongoDB as a backend for storing and managi
 
 - **Data storage**: MongoDB is a highly scalable, high-performance NoSQL database that supports flexible data storage in JSON-like documents. This flexibility allows for easy storage and retrieval of time series data, such as sensor readings, without the need for complex schema changes.
 - **Time series collections**: MongoDB provides dedicated support for time series data through time series collections. These collections are optimized for insert-heavy workloads and enable efficient storage, querying, and analysis of time series data.
-- **PyMongoArrow**:
-
-pymongoarrow offers several advantages over using $project with the aggregate() function in pymongo when building a DataFrame:
+- **PyMongoArrow**: Pymongoarrow offers several advantages over using $project with the aggregate() function in pymongo when building a DataFrame:
 
     Performance: pymongoarrow can significantly improve the performance of transferring data from MongoDB to pandas by using the Apache Arrow format. Apache Arrow is a high-performance in-memory data format optimized for analytical processing. It minimizes the need for data serialization and deserialization, allowing for much faster data transfer between MongoDB and pandas.
 
