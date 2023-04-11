@@ -1,13 +1,3 @@
-'''from pymongo import MongoClient
-import requests
-
-# Replace the following with your MongoDB connection string
-mongo_conn_str = "mongodb://username:password@localhost:27017/db_name"
-
-client = MongoClient(mongo_conn_str)
-db = client["db_name"]
-collection = db["collection_name"]'''
-
 # Fetch a single document (replace the query with your specific requirements)
 #document = collection.find_one()
 import requests
